@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 60%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+h1, h2, p {
+  margin: 1.6rem 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+iframe{
+    width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Header  */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("Images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fffcca;
+}
+
+.logo h1 {
+  font-size: 3.2rem;
+  color: #11d3bc;
+  margin: 0;
+}
+
+nav {
+  padding: 2% 8%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+  color: #11d3bc;
+  transition: 0.5s ease-in-out;
+}
+
+.header-content {
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 8%;
+}
+
+/* About Section */
+.about-left,
+.about-middle,
+.about-right {
+  flex-basis: 30%;
+  padding: 1.6rem;
+}
+
+.btn {
+  background-color: #11d3bc;
+  color: #fff;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.about2 {
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.about2-left {
+  flex-basis: 50%;
+}
+
+.about2-right {
+  flex-basis: 30%;
+}
+
+.about2 .card {
+  padding: 3rem 8rem;
+  color: #222;
+  background-color: #dcdcdc;
+  margin: 1.6rem;
+  text-align: center;
+}
+
+/* Stats Table */
+.stats .row {
+  justify-content: center;
+}
+
+.stat-table td{
+    font-size: 2rem;
+    margin: 30px 10px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.stat-table td:nth-child(2){
+    border: none;
+}
+.stat-table td:nth-child(1){
+    background-color: #C6F1E7;
+}
+.stat-table td:nth-child(3){
+    background-color: #11CBD7;
+}
+.stat-table td:hover:nth-child(2n+1){
+    background-color: #37E2D5;
+    border: 1px solid #006778;
+}
+
+/* Campus */
+.campus .row {
+    justify-content: center;
+  }
+.campus {
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.campus .vid {
+  background-color: #505050;
+  padding: 2rem;
+  margin: 0 1rem;
+  flex-basis: 50%;
+}
+
+
+/* Contact */
+.contact .row {
+  justify-content: center;
+}
+
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.4rem 0;
+}
+
+.contact form input {
+  font-size: 1.8rem;
+  width: 50%;
+}
+input[type="text"],
+input[type="email"] {
+width: 50%;
+padding: 12px 20px;
+margin: 1.2rem 0;
+display: block;
+border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+width: 50%;
+background-color: #11d3bc;
+color: #fff;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+input::placeholder {
+font-size: 1.3rem;
+color: #ccc;
+}
+
+.contact textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  resize: none;
+  color: #222;
+  margin: 1.2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+textarea::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+  }
+
+/* Footer */
+footer {
+  height: auto;
+  background-color: #222;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+footer .icon{
+    display: inline-block;
+}
+.icon a{
+    padding: 1rem;
+}
+footer p{
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 2% 0;
+  }
+
+  .header-content {
+    width: 100%;
+    top: 16%;
+    left: 0;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 80%;
+    margin: 1.2rem auto;
+  }
+
+  .campus .vid {
+    margin: 1.6rem 0;
+  }
+
+  .contact form input,
+  .contact textarea {
+    width: 100%;
+  }
+}
